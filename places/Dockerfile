@@ -5,8 +5,8 @@ WORKDIR /app
 # Copy the django app to the working directory
 COPY . /app
 
-# Set the environment variables
-ENV VARIABLES_DB_HOST 10.128.0.82
+# Set the environment places
+ENV PLACES_DB_HOST 10.128.0.87
 
 # Install Python dependencies
 RUN apk update && apk add postgresql-dev gcc python3-dev musl-dev
